@@ -1,2 +1,3 @@
 # homebrew-prattl
-Homebrew tap for prattl
+
+Homebrew tap for prattl.

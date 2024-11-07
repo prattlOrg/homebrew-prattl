@@ -5,14 +5,14 @@
 class Prattl < Formula
   desc "CLI tool for transcribing audio to text."
   homepage "https://prattl.co/"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   depends_on "ffmpeg"
 
   on_macos do
-    url "https://github.com/prattlOrg/prattl/releases/download/v0.3.0/prattl_darwin_all.tar.gz"
-    sha256 "e4a3bbc54eab73003446dc245961c6eaf59381c489cea0d6e81da07ff30c124d"
+    url "https://github.com/prattlOrg/prattl/releases/download/v0.3.1/prattl_darwin_all.tar.gz"
+    sha256 "c2a995a14612cbc744170c96177ea6acfdc86e5ce2fc65d8be49c77ef1e328ea"
 
     def install
       bin.install "prattl"
@@ -22,8 +22,8 @@ class Prattl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/prattlOrg/prattl/releases/download/v0.3.0/prattl_linux_x86_64.tar.gz"
-        sha256 "0ce6bdeaa8305557cefa1336164affce54905255033600fe9febe50d5d776ddf"
+        url "https://github.com/prattlOrg/prattl/releases/download/v0.3.1/prattl_linux_x86_64.tar.gz"
+        sha256 "c5bc28748629fcb3ac64cebeb68913cfaaed321c1ca71efeb28703f7ad07ccb1"
 
         def install
           bin.install "prattl"
@@ -32,8 +32,8 @@ class Prattl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/prattlOrg/prattl/releases/download/v0.3.0/prattl_linux_arm64.tar.gz"
-        sha256 "a988b43a4c334069057218ef92c80a3238fa99149de2f9f6ced4dbe7d7189c4f"
+        url "https://github.com/prattlOrg/prattl/releases/download/v0.3.1/prattl_linux_arm64.tar.gz"
+        sha256 "858ef38c61736f264acfe0ac19a63528eca577d139e61f293c28429434bd1a42"
 
         def install
           bin.install "prattl"
